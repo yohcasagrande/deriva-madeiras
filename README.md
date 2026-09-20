@@ -1,4 +1,4 @@
-# Site da Marécasa Madeiras
+# Site da Deriva Madeiras
 
 Site estático (HTML, CSS e JavaScript puro, sem build) pronto para a Vercel. Todos os arquivos ficam na raiz, sem pastas, para o upload pelo navegador no GitHub não bagunçar a estrutura.
 
@@ -13,12 +13,12 @@ robots.txt, sitemap.xml, favicon.svg, apple-touch-icon.png, og-image.jpg
 
 ## Publicar (GitHub + Vercel)
 
-1. No GitHub, crie o repositório `marecasa-madeiras` (sem README).
+1. No GitHub, crie o repositório `deriva-madeiras` (sem README).
 2. Clique em **uploading an existing file**, selecione todos os arquivos desta pasta com Cmd+A, arraste e clique em **Commit changes**.
-3. Na Vercel: **Add New > Project**, importe `marecasa-madeiras`, Framework Preset **Other**, **Deploy**.
-4. O site fica em `https://marecasa-madeiras.vercel.app`. Cada commit no GitHub atualiza o site sozinho.
+3. Na Vercel: **Add New > Project**, importe `deriva-madeiras`, Framework Preset **Other**, **Deploy**.
+4. O site fica em `https://deriva-madeiras.vercel.app`. Cada commit no GitHub atualiza o site sozinho.
 
-Se o endereço final for outro (nome diferente na Vercel ou domínio próprio), troque `marecasa-madeiras.vercel.app` em `index.html` (canonical, og:url, og:image e o bloco JSON-LD), `robots.txt` e `sitemap.xml`.
+Se o endereço final for outro (nome diferente na Vercel ou domínio próprio), troque `deriva-madeiras.vercel.app` em `index.html` (canonical, og:url, og:image e o bloco JSON-LD), `robots.txt` e `sitemap.xml`.
 
 ## Ajustes rápidos
 

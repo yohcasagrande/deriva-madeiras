@@ -21,8 +21,8 @@
   --linha: rgba(30, 26, 22, .14);
   --linha-clara: rgba(241, 234, 223, .16);
 
-  --serif: "Instrument Serif", Georgia, "Times New Roman", serif;
-  --sans: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --serif: "Gloock", Georgia, "Times New Roman", serif;
+  --sans: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   --raio: 18px;
   color-scheme: light;
 }

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://marecasa-madeiras.vercel.app/sitemap.xml
+Sitemap: https://deriva-madeiras.vercel.app/sitemap.xml

@@ -1,5 +1,5 @@
 /* =========================================================
-   Marécasa Madeiras · scripts do site
+   Deriva Madeiras · scripts do site
    ========================================================= */
 (() => {
   'use strict';
@@ -51,8 +51,8 @@
   $$('[data-peca]').forEach((a) => a.addEventListener('click', () => {
     const peca = a.dataset.peca;
     a.href = peca === 'Peça sob medida'
-      ? zap('Olá, Marécasa! Vim pelo site e tenho uma ideia de peça sob medida.')
-      : zap(`Olá, Marécasa! Vi no site a peça "${peca}" e quero saber mais.`);
+      ? zap('Olá, Deriva! Vim pelo site e tenho uma ideia de peça sob medida.')
+      : zap(`Olá, Deriva! Vi no site a peça "${peca}" e quero saber mais.`);
   }));
 
   /* =========================================================
@@ -86,8 +86,8 @@
   const est = { aba: 'texto', logo: null, logoNomeArquivo: '', pronto: false };
 
   const FONTES = {
-    classica: { nome: 'clássica', css: (px) => `400 ${px}px "Instrument Serif", Georgia, serif`, escala: 1, caixa: (t) => t, espaco: 0 },
-    moderna: { nome: 'moderna', css: (px) => `800 ${px}px "Hanken Grotesk", Arial, sans-serif`, escala: .62, caixa: (t) => t.toUpperCase(), espaco: .14 },
+    classica: { nome: 'clássica', css: (px) => `400 ${px}px "Gloock", Georgia, serif`, escala: 1, caixa: (t) => t, espaco: 0 },
+    moderna: { nome: 'moderna', css: (px) => `800 ${px}px "Manrope", Arial, sans-serif`, escala: .62, caixa: (t) => t.toUpperCase(), espaco: .14 },
     manuscrita: { nome: 'cursiva', css: (px) => `400 ${px}px Allura, cursive`, escala: 1.22, caixa: (t) => t, espaco: 0 },
   };
   const fonteAtual = () => $('input[name="fonte"]:checked', form).value;
@@ -249,7 +249,7 @@
   const redesenha = () => { cancelAnimationFrame(pedido); pedido = requestAnimationFrame(desenha); };
 
   const fontesProntas = document.fonts
-    ? Promise.all(['400 40px "Instrument Serif"', '800 40px "Hanken Grotesk"', '400 40px Allura'].map((f) => document.fonts.load(f))).catch(() => {})
+    ? Promise.all(['400 40px "Gloock"', '800 40px "Manrope"', '400 40px Allura'].map((f) => document.fonts.load(f))).catch(() => {})
     : Promise.resolve();
   const fotoPronta = new Promise((ok) => { foto.onload = ok; foto.onerror = ok; foto.src = FOTO.src; });
   Promise.all([fontesProntas, fotoPronta]).then(() => {
@@ -344,7 +344,7 @@
       gravacao = `${partes.join(' e ')} (letra ${f.nome})`;
     }
     const linhas = [
-      'Olá, Marécasa! Quero um orçamento de peças com gravação a laser.',
+      'Olá, Deriva! Quero um orçamento de peças com gravação a laser.',
       '',
       '*Peça de referência:* tábua de corte com alça',
       `*Gravação:* ${gravacao}`,
