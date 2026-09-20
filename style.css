@@ -121,7 +121,7 @@ section[id] { scroll-margin-top: 72px; }
   background: radial-gradient(60% 60% at 50% 100%, rgba(156, 90, 43, .14), transparent 70%);
 }
 .hero__in { position: relative; display: grid; grid-template-columns: minmax(0, 1fr); gap: 44px; padding: 44px 0 80px; }
-.hero h1 { font-size: clamp(64px, 12vw, 132px); line-height: .92; color: var(--mar); letter-spacing: -.02em; }
+.hero h1 { font-size: clamp(52px, 8.6vw, 98px); line-height: .96; color: var(--mar); letter-spacing: -.02em; }
 .hero__lead { margin-top: 24px; font-size: 19px; color: var(--tinta-2); max-width: 44ch; }
 .hero__ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
 .hero__selos { list-style: none; margin: 34px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 22px; color: var(--tinta-2); font-weight: 600; font-size: 15px; }
