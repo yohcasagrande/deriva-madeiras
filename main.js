@@ -1,5 +1,5 @@
 /* =========================================================
-   Deriva Madeiras · scripts do site
+   Marécasa Madeiras · scripts do site
    ========================================================= */
 (() => {
   'use strict';
@@ -51,8 +51,8 @@
   $$('[data-peca]').forEach((a) => a.addEventListener('click', () => {
     const peca = a.dataset.peca;
     a.href = peca === 'Peça sob medida'
-      ? zap('Olá, Deriva! Vim pelo site e tenho uma ideia de peça sob medida.')
-      : zap(`Olá, Deriva! Vi no site a peça "${peca}" e quero saber mais.`);
+      ? zap('Olá, Marécasa! Vim pelo site e tenho uma ideia de peça sob medida.')
+      : zap(`Olá, Marécasa! Vi no site a peça "${peca}" e quero saber mais.`);
   }));
 
   /* =========================================================
@@ -344,7 +344,7 @@
       gravacao = `${partes.join(' e ')} (letra ${f.nome})`;
     }
     const linhas = [
-      'Olá, Deriva! Quero um orçamento de peças com gravação a laser.',
+      'Olá, Marécasa! Quero um orçamento de peças com gravação a laser.',
       '',
       '*Peça de referência:* tábua de corte com alça',
       `*Gravação:* ${gravacao}`,
